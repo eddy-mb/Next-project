@@ -1,11 +1,8 @@
-import NavBar from "@/components/nav-bar/navBar";
-import Background from "@/components/background/backgraound";
-
+import HomePage from "@/components/home/homePage";
 export default function Home() {
   return (
-    <main className="bg-[#393A47] h-screen">
-      <NavBar></NavBar>
-      <Background></Background>
+    <main className="bg-[#393A47] h-screen w-full z-13">
+      <HomePage></HomePage>
     </main>
   );
 }
