@@ -19,12 +19,12 @@ export default function NavBar() {
       </div>
       <div className="h-full">
         <ul className="flex items-center h-full pr-20">
-          {LinkNav.map(({ text, url }) => {
+          {LinkNav.map(({ text, url, id }) => {
             return (
               <li className=" mx-6 font-medium">
                 <Link
                   className="hover:text-violet-600 p-2"
-                  key={url}
+                  key={id}
                   href={url}>
                   {text}
                 </Link>
