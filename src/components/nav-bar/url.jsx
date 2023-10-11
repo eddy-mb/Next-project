@@ -1,6 +1,6 @@
 export const LinkNav = [
-  { text: "HOME", url: "#" },
-  { text: "ABOUT", url: "#" },
-  { text: "PROJECTS", url: "#" },
-  { text: "CONTACT", url: "#" },
+  { id: 0, text: "HOME", url: "#" },
+  { id: 1, text: "ABOUT", url: "#" },
+  { id: 2, text: "PROJECTS", url: "#" },
+  { id: 3, text: "CONTACT", url: "#" },
 ];
