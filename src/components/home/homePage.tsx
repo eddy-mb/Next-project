@@ -17,11 +17,11 @@ export default function HomePage(props: unknown) {
     <div
       id="cover"
       className="w-full h-screen">
-      <Particles
+      {/* <Particles
         options={optionsParticles}
         init={customInit}
         loaded={options}
-      />
+      /> */}
       <div className=" h-full bg-[#393A47]/60">
         <div className="relative h-full items-center flex justify-center bg-gradient-to-r from-[#393A47]/10 via-black/30 to-black/10">
           <div className=" flex flex-col p-2 h-min bg-white absolute top-1/3 right-0 space-y-6 bg-opacity-10 rounded-md">
