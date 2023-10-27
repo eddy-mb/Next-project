@@ -29,7 +29,7 @@ export default function FormContact() {
   };
 
   return (
-    <div className="space-y-4 shadow-my shadow-[#ffa726] p-8 rounded-lg md:w-[400px]">
+    <div className="space-y-4 shadow-my shadow-[#ffa726] p-8 rounded-lg md:w-[400px] md:hidden">
       <h2 className=" text-center">Formulario de contacto</h2>
 
       <form
