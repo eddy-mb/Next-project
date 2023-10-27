@@ -4,7 +4,6 @@ import {
   FaJs,
   FaReact,
   FaPython,
-  FaGit,
   FaGithub,
   FaFigma,
   FaGitAlt,
@@ -23,7 +22,7 @@ export const SkillsFrontEnd = [
   { id: 2, icon: <FaJs size={16} />, name: "JavaScript" },
   { id: 3, icon: <FaReact size={16} />, name: "React JS" },
   { id: 4, icon: <SiNextdotjs size={16} />, name: "Next JS" },
-  { id: 5, icon: <SiTailwindcss size={16} />, name: "Tailwind css" },
+  { id: 5, icon: <SiTailwindcss size={16} />, name: "Tailwind-css" },
 ];
 export const SkillsBackEnd = [
   { id: 0, icon: <FaPython size={16} />, name: "Python" },

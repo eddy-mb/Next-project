@@ -3,13 +3,51 @@
 @tailwind utilities;
 
 #cover {
-  background: linear-gradient(
-    90.21deg,
-    rgba(170, 54, 124, 0.5) -5.91%,
-    rgba(74, 47, 189, 0.5) 111.58%
+  background-image: linear-gradient(
+    to right top,
+    #aa367ccc,
+    #951c7ecc,
+    #790081cc,
+    #540086cc,
+    #00008bcc
   );
-  /* display: flex; */
-  min-height: 100vh;
+
+  min-height: 100%;
   background-repeat: no-repeat;
   block-size: cover;
+}
+
+#bg-black6 {
+  background-image: linear-gradient(
+    to right,
+    #33333399,
+    #2b2b2b99,
+    #22222299,
+    #1a1a1a99,
+    #12121299,
+    #12121299,
+    #12121299,
+    #12121299,
+    #1a1a1a99,
+    #22222299,
+    #2b2b2b99,
+    #33333399
+  );
+}
+#bg-black8 {
+  background-image: linear-gradient(
+    to right,
+    #333333cc,
+    #2b2b2bcc,
+    #222222cc,
+    #1a1a1acc,
+    #121212cc,
+    #121212cc,
+    #121212cc,
+    #121212cc,
+    #1a1a1acc,
+    #222222cc,
+    #2b2b2bcc,
+    #333333cc
+  );
 }
