@@ -17,7 +17,6 @@ export default function ContactPage() {
             WhatsApp.
           </p>
         </section>
-
         <FormContact />
       </div>
     </main>

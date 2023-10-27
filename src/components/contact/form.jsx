@@ -29,7 +29,7 @@ export default function FormContact() {
   };
 
   return (
-    <div className="space-y-4 shadow-my shadow-[#ffa726] p-8 rounded-lg md:w-[400px] md:hidden">
+    <div className="space-y-2 shadow-my shadow-[#ffa726] p-6 rounded-lg w-full md:w-[400px]">
       <h2 className=" text-center">Formulario de contacto</h2>
 
       <form
@@ -76,7 +76,7 @@ export default function FormContact() {
         />
         {errors.user_email && (
           <span className="text-red-400 text-sm">
-            {errors.user_email.message}{" "}
+            {errors.user_email.message}
           </span>
         )}
 
@@ -90,7 +90,7 @@ export default function FormContact() {
           className="bg-white/10 rounded border border-[#ffa726]/50 p-2"
           name="user_message"
           id="mensaje"
-          cols="30"
+          cols=""
           rows="10"
           placeholder="Ingrese su mensaje"></textarea>
         {errors.user_message && (
