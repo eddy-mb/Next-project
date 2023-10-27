@@ -11,7 +11,7 @@ export default function HomePage() {
     <div
       id="home"
       className="w-full h-screen">
-      {/* <TsParticles /> */}
+      <TsParticles />
 
       <div
         id="bg-black6"
