@@ -25,19 +25,22 @@ export default function NavBar() {
           />
           <p className="mx-2 font-medium text-base">EDDY MAMANI</p>
         </Link>
-        <div className="flex items-center">
-          {SocialNetworks.map(({ name, url, id }) => {
+        <ul className="flex">
+          {SocialNetworks.map((props) => {
             return (
-              <Link
-                target="_blank"
-                href={url}
-                className="hover:text-[#ffa726] p-2 rounded-md text-"
-                key={id}>
-                {name}
-              </Link>
+              <li
+                key={props.id}
+                className="flex items-center p-2">
+                <Link
+                  href={props.url}
+                  target="_blank"
+                  className="hover:text-[#ffa726]">
+                  {props.name}
+                </Link>
+              </li>
             );
           })}
-        </div>
+        </ul>
         <div className="flex items-center relative">
           <button
             className="hover:text-[#ffa726] md:hidden "
@@ -45,15 +48,16 @@ export default function NavBar() {
             <FaBars size={30} />
           </button>
           <ul className="hidden md:flex">
-            {LinkNav.map(({ text, url, id }) => {
+            {LinkNav.map((props) => {
               return (
-                <li className=" mx-2 font-medium text-base">
+                <li
+                  key={props.id}
+                  className=" mx-2 font-medium text-base">
                   <Link
                     className="hover:text-[#ffa726] p-2"
-                    key={id}
-                    href={url}
+                    href={props.url}
                     onClick={() => setActive(!active)}>
-                    {text}
+                    {props.text}
                   </Link>
                 </li>
               );
@@ -68,15 +72,17 @@ export default function NavBar() {
         className={`md:hidden p-4 text-white absolute right-0 top-0 h-screen w-1/2 space-y-6 flex flex-col ${
           active ? "bg-[#aa367c]/90" : "hidden"
         }`}>
-        {LinkNav.map(({ text, url, id }) => {
+        {LinkNav.map((props) => {
           return (
-            <li className="text-base">
+            <li
+              key={props.id}
+              className="text-base">
               <Link
                 className=" py-2 border-b border-[#f9af7e] block"
-                key={id}
-                href={url}
+                key={props.id}
+                href={props.url}
                 onClick={() => setActive(!active)}>
-                {text}
+                {props.text}
               </Link>
             </li>
           );
