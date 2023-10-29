@@ -9,7 +9,7 @@ import home from "@/img/home.png";
 export default function HomePage() {
   return (
     <section id="bg-black6">
-      {/* <TsParticles /> */}
+      <TsParticles />
       <div
         id="home"
         className="w-full flex justify-center  space-y-6 md:space-y-0 h-screen">
