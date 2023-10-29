@@ -5,7 +5,7 @@ import Image from "next/image";
 export const ProjectList = [
   {
     id: 0,
-    title: "PRODEV - Project & Development",
+    title: "PRODEV",
     content:
       "Prodev es un sitio web que desarrollé para profesionales que buscan establecer su presencia digital. Usé HTML5, CSS y JavaScript para crear un diseño atractivo y funcional. El sitio es interactivo, se adapta a dispositivos móviles y permite a los profesionales gestionar su contenido fácilmente. Prodev ha ayudado a estos profesionales a destacar en línea y conectarse con un público más amplio.  Este proyecto demuestra que, incluso utilizando tecnologías básicas, se pueden lograr resultados notables en la web.",
     img: (
