@@ -9,21 +9,22 @@ import home from "@/img/home.png";
 export default function HomePage() {
   return (
     <section id="bg-black6">
-      {/* <TsParticles /> */}
+      <TsParticles />
       <div
         id="home"
-        className="space-y-6 sm:space-y-0 h-screen">
-        <div className=" flex justify-center items-center px-2">
-          <div className="hidden sm:block">
+        className="w-full flex justify-center  space-y-6 md:space-y-0 h-screen">
+        <div className="h-full flex justify-center items-center px-2 max-w-lg md:max-w-full md:space-x-20">
+          <div className="hidden md:block md:w-96 ">
             <Image
-              width={500}
+              width={300}
+              height={300}
               src={home}
               alt="Home image"
             />
           </div>
-          <div className="flex h-full items-center sm:flex sm:justify-center">
+          <div className="flex h-full items-center md:max-w-lg ">
             <div className="flex flex-col items-center text-center py-4 space-y-4 text-white">
-              <h1 className="text-2xl sm:text-4xl font-bold">
+              <h1 className="text-2xl md:text-4xl font-bold">
                 HOLA, SOY EDDY!
               </h1>
               <Image

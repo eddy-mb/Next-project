@@ -7,11 +7,13 @@ import {
 } from "./skills";
 export default function AboutPage() {
   return (
-    <main id="bg-black6">
+    <main
+      id="bg-black6"
+      className="w-full flex flex-col items-center">
       <div
         id="about"
-        className=" text-white w-full min-h-screen space-y-4 py-12 px-2 md:flex md:flex-col md:items-center">
-        <section className="max-w-4xl space-y-4">
+        className=" text-white min-h-screen space-y-4 py-12 px-2 max-w-lg md:max-w-full md:flex md:flex-col md:items-center md:space-y-20">
+        <section className="md:max-w-4xl space-y-4">
           <div className="flex flex-col items-center">
             <h1 className="text-xl font-semibold">ACERCA DE MI</h1>
             <hr className=" w-12 border border-[#ffa726] rounded-xl "></hr>
@@ -27,7 +29,7 @@ export default function AboutPage() {
             <h2 className="text-[#f9af7e]">
               PERFIL PERSONAL <hr className="border-s-0 border-[#f9af7e]" />
             </h2>
-            <div className="text-justify space-y-1 shadow-[#ffa726] shadow-my rounded-lg p-2">
+            <div className="text-justify space-y-1 shadow-[#ffa726] shadow-my rounded-lg p-2 md:shadow-none">
               <p>
                 Como Ingeniero Industrial de formación, descubrí mi pasión por
                 el desarrollo Full Stack y aprendí de manera autodidacta. Ahora,
@@ -117,7 +119,7 @@ export default function AboutPage() {
         </div>
       </div>
       <div className="w-full flex justify-center">
-        <hr className=" w-3/4 border-s-0 border-[#ffa726]" />
+        <hr className=" w-4/5 border-s-0 border-[#ffa726]" />
       </div>
     </main>
   );
