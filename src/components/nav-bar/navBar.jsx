@@ -10,7 +10,7 @@ import { useState } from "react";
 export default function NavBar() {
   const [active, setActive] = useState(false);
   return (
-    <nav className=" text-white h-auto w-full sticky top-0 bg-[#aa367c] sm:fixed">
+    <nav className=" text-white h-auto w-full fixed bg-[#aa367c]">
       <div
         id="bg-black6"
         className="flex p-2 justify-around bg-black/50 ">
