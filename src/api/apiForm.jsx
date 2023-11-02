@@ -1,4 +1,4 @@
-const url_create = "http://127.0.0.1:8000/api/user/";
+const url_create = "https://fastapi-gd0b.onrender.com/api/user/";
 
 export async function userCreate(data) {
   const response = await fetch(url_create, {
