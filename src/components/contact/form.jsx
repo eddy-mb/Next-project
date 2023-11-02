@@ -29,12 +29,12 @@ export default function FormContact() {
   };
 
   return (
-    <div className="space-y-2 shadow-my shadow-[#ffa726] p-6 rounded-lg w-full md:w-[400px]">
-      <h2 className=" text-center">Formulario de contacto</h2>
+    <div className="space-y-4 shadow-my shadow-[#ffa726] p-6 rounded-lg w-full max-w-xs sm:w-[350px] md:max-w-xl">
+      <h2 className=" text-center text-[#f9af7e] ">Formulario de contacto</h2>
 
       <form
         onSubmit={handleSubmit(sendData)}
-        className="flex flex-col w-full"
+        className="flex flex-col"
         ref={form}>
         <label
           htmlFor="name"
@@ -65,14 +65,14 @@ export default function FormContact() {
           {...register("user_email", {
             required: {
               value: true,
-              message: "El correo electronico es requerido",
+              message: "El correo electrónico es requerido",
             },
           })}
           type="email"
           className="bg-transparent border-b p-1 border-[#ffa726]/50"
           id="email"
           name="user_email"
-          placeholder="Introduce tu correo electronico"
+          placeholder="Introduce tu correo electrónico"
         />
         {errors.user_email && (
           <span className="text-red-400 text-sm">
@@ -91,7 +91,7 @@ export default function FormContact() {
           name="user_message"
           id="mensaje"
           cols=""
-          rows="10"
+          rows="8"
           placeholder="Ingrese su mensaje"></textarea>
         {errors.user_message && (
           <span className="text-red-400 text-sm">El memsaje es requerido</span>

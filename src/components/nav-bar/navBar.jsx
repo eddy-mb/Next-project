@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import perfil from "@/img/perfil.png";
+import logo from "@/img/logo.png";
 import Link from "next/link";
 import { SocialNetworks } from "../nav-bar/socialNetworks";
 import { LinkNav } from "./url";
@@ -10,7 +10,7 @@ import { useState } from "react";
 export default function NavBar() {
   const [active, setActive] = useState(false);
   return (
-    <nav className=" text-white h-auto w-full fixed top-0 bg-[#aa367c]">
+    <nav className=" text-white h-auto w-full fixed bg-[#aa367c]">
       <div
         id="bg-black6"
         className="flex p-2 justify-around bg-black/50 ">
@@ -18,7 +18,7 @@ export default function NavBar() {
           className="flex items-center hover:text-[#ffa726]"
           href="/">
           <Image
-            src={perfil}
+            src={logo}
             width={30}
             height={30}
             alt="Logotipo"
@@ -88,7 +88,7 @@ export default function NavBar() {
           );
         })}
         <button
-          className="border border-[#ffa726] p-2 mx-10 rounded-full"
+          className="border border-[#ffa726] py-1 px-4 w-min rounded-full place-self-center"
           onClick={() => setActive(!active)}>
           Cerrar
         </button>
